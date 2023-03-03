@@ -1,0 +1,17 @@
+<nav>
+  <b>Angular Keycloak</b>
+  <ul>
+    <li *ngIf="!authenticated"><a routerLink="/">Login</a></li>
+    <li><a routerLink="/products">Products</a></li>
+
+    <ng-container *ngIf="authenticated">
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><button (click)="onLogoutClick()">Logout</button></li>
+    </ng-container>
+    
+
+    <ng-container *ngIf="isAdmin">
+      <li><a routerLink="/admin/dashboard">Admin Dashboard</a></li>
+    </ng-container>
+  </ul>
+</nav>

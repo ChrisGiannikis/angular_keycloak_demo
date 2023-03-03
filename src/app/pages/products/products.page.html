@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Products</h1>
+
+  <ul>
+    <li *ngFor="let product of products$ | async">
+      <a [routerLink]="product.id.toString()">
+        {{ product.name }} at NOK {{ product.price }}
+      </a>
+    </li>
+  </ul>
+</div>
