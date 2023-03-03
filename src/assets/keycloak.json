@@ -1,8 +1,8 @@
 {
-  "realm": "noroff",
-  "auth-server-url": "http://localohost:8080/auth/",
+  "realm": "cg-keycloak",
+  "auth-server-url": "https://lemur-3.cloud-iam.com/auth/",
   "ssl-required": "external",
-  "resource": "angular-client",
+  "resource": "my-angular-app",
   "public-client": true,
   "confidential-port": 0
 }
